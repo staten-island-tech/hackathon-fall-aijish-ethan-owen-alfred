@@ -111,6 +111,31 @@ def run_game():
 
     pygame.quit()
 
+    restart_button = Button("Restart", screen_width // 2 - 100, screen_height // 2 + 50, 200, 50)
+
+    screen.fill(BACKGROUND_COLOR)
+    screen.blit(game_over_text, (screen_width // 2 - 150, screen_height // 2 - 50))
+    screen.blit(final_score_text, (screen_width // 2 - 150, screen_height // 2 + 10))
+    restart_button.draw()
+    pygame.display.flip()
+
+    # Wait for user interaction to restart
+    restart_clicked = False
+    while not restart_clicked:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                return
+
+        # Check if the restart button is clicked
+        if restart_button.is_clicked():
+            restart_clicked = True
+
+        pygame.display.update()
+
+    # Restart the game
+    run_game()
+
 if __name__ == "__main__":
     run_game()
   
