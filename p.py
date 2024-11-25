@@ -1,6 +1,11 @@
 import pygame
 import random
 import time
+from time import sleep
+
+pygame.mixer.init()
+pygame.mixer.music.load('toi.mp3')
+pygame.mixer.music.play()
 
 pygame.init()
 screen_width = 600
