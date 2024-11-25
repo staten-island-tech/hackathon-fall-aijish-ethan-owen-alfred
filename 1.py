@@ -22,7 +22,7 @@ screen_width = 600
 screen_height = 800
 tile_width = 200
 tile_height = 100
-fall_speed = 7+1
+fall_speed = 7
 
 
 # Colors
