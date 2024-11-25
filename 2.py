@@ -12,14 +12,8 @@ pygame.mixer.music.load("toi.mp3")
 # Play the MP3 file
 pygame.mixer.music.play()
 
-
-
-
 # Initialize Pygame
 pygame.init()
-
-
-
 
 # Set up game variables
 screen_width = 600
