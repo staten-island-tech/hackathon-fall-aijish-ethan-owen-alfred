@@ -3,10 +3,10 @@ import random
 import time
 pygame.init()
 
-screen_width = 300
-screen_height = 400
-tile_width = 100
-tile_height = 50
+screen_width = 600
+screen_height = 800
+tile_width = 200
+tile_height = 100
 fall_speed = 2
 speed_increase_interval = 5000
 
